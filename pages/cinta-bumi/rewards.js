@@ -8,7 +8,7 @@ import RewardsProgressStep from "../../components/RewardsProgressStep";
 
 const images = [
   {
-    src: "/images/cinta-bumi/rewards/tumbler-none.svg",
+    src: "/images/cinta-bumi/rewards/tumbler-complete.svg",
   },
   {
     src: "/images/cinta-bumi/rewards/rp-none.svg",
@@ -30,6 +30,7 @@ export default function RewardsPage() {
         <PosterBanner />
         <Line className="h-3" />
         <CintaBumiShare />
+        <Line className="h-3" />
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ export default function StepProgress() {
   return (
     <div className="pt-8">
       <ProgressBar
-        percent={(58 / 100) * 25}
+        percent={((102 - 100) / 500) * 34 + 34}
         filledBackground="rgb(132 204 22)"
         unfilledBackground="rgb(209 213 219)"
         height={5}

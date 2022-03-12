@@ -4,6 +4,8 @@ import Line from "../../components/Line";
 import ImageHorizontalScrollWithLink from "../../components/ImageHorizontalScrollWithLink";
 import PosterBanner from "../../components/PosterBanner";
 import ProductWithTitle from "../../components/ProductWithTitle";
+import ImageHorizontalScroll from "../../components/ImageHorizontalScroll";
+import Image from "next/image";
 
 const images = [
   {
@@ -20,6 +22,48 @@ const images = [
   },
 ];
 
+const packages = [
+  {
+    src: "/images/cinta-bumi/product-1.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-2.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-3.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-1.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-2.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-3.svg",
+  },
+];
+
+const products = [
+  {
+    src: "/images/cinta-bumi/product-4.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-5.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-6.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-4.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-5.svg",
+  },
+  {
+    src: "/images/cinta-bumi/product-6.svg",
+  },
+];
+
 export default function CintaBumiPage() {
   return (
     <div>
@@ -30,10 +74,25 @@ export default function CintaBumiPage() {
         <Line className="h-2" />
         <PosterBanner />
         <Line className="h-2" />
-        <ProductWithTitle title="Mau bepergian? Jangan lupa bawa ini">
-          Test
+        <ProductWithTitle
+          id="package"
+          title="Mau bepergian? Jangan lupa bawa ini"
+        >
+          <ImageHorizontalScroll images={packages} height={157} />
         </ProductWithTitle>
+        <Line className="h-2" />
+        <ProductWithTitle id="products" title="Olah sampahmu sendiri">
+          <ImageHorizontalScroll images={products} height={157} />
+        </ProductWithTitle>
+        <Line className="h-2" />
       </div>
+      <Image
+        id="categories"
+        src="/images/cinta-bumi/shop-category.svg"
+        height={352}
+        width={375}
+        alt="Banner Cinta Bumi"
+      />
     </div>
   );
 }
