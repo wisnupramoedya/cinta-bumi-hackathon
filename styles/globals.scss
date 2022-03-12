@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "variable";
+
+@font-face {
+  font-display: fallback;
+  font-family: 'effra';
+  src: url('https://www.static-src.com/fonts/1.0.0/effra/effra-regular.woff2') format('woff2'),
+  url('https://www.static-src.com/fonts/1.0.0/effra/effra-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: 'efframedium';
+  src: url('https://www.static-src.com/fonts/1.0.0/effra/effraMedium-regular.woff2') format('woff2'),
+  url('https://www.static-src.com/fonts/1.0.0/effra/efframedium-regular.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'effra', 'efframedium', Helvetica, Arial, sans-serif;
+}
